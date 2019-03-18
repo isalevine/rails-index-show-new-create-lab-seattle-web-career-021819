@@ -1,0 +1,5 @@
+<h1>This is the '/coupons' index view.</h1>
+
+<% @coupons.each do |coupon| %>
+  <%= link_to "#{coupon.store} - #{coupon.coupon_code}", coupon_path(coupon) %><br><br>
+<% end %>
